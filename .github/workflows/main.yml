@@ -1,7 +1,7 @@
 name: Daily Push
 on:
   schedule:
-    - cron: '30 12 * * *'
+    - cron: '36 12 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
       run: jupyter nbconvert --execute Yield\ curve\ scraper.ipynb
     - name: Commit and Push
       env:
-        GITHUB_TOKEN: ${{ secrets.REPO-CODE }}
+        GITHUB_TOKEN: ${{ secrets.CODE_REPO }}
       run: |
         git config --global user.email "amund.fylling@student.nhh.no"
         git config --global user.name "amundfylling"
