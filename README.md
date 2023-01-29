@@ -1,5 +1,4 @@
 # yield-curve-scraper
+This is a simple script to scrape the latest Daily Treasury Par Yield Curve Rates from the U.S. DEPARTMENT OF THE TREASURY.
 
-<br>
-![Alt Text](yield_curve.png)
-<br>
+![image description](yield_curve.png)
